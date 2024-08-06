@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 400px;
+            border: 2px solid;
+            background-color: chocolate;
+           display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 10px 10px 10px 10px red;
+        }
+        button{
+           padding: 5px;
+            background-color: orange;
+           height: 30px;
+           width: 90px;
+           border-radius: 12px;
+           text-shadow: 2px 2px 2px red;
+        }
+       .translate:hover ~img{
+        translate: 100px 200px ;
+        transition: all 2s;
+        
+       }
+       .rotate:hover ~img{
+        transform: rotatex(200deg);
+        transition: all 3s;
+       }
+       .scale:hover ~ img{
+        transform: scale(4);
+        transition: all 4s;
+       }
+       .skew:hover ~ img{
+        transform: skew(290deg);
+        transition: all 1s;
+       }
+       body{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+      
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button">
+        <button class="translate">Translate</button>
+        <button class="rotate">Rotate</button>
+        <button class="scale">Scale</button>
+        <button class="skew">Skew</button><br>
+        <br>
+        <img src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-star-vector-icon-png-image_696411.jpg" alt="" width="100px" style="margin-top: 40px; margin-left: 130px;">
+        <img src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-star-vector-icon-png-image_696411.jpg" alt="" width="100px" style="margin-top: 40px; margin-left: 130px;">
+        </div>
+    </div>
+    
+</body> 
+</html>
